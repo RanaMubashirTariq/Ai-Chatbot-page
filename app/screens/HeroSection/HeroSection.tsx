@@ -156,17 +156,34 @@ export default function HeroSection  () {
           {menuOpen && (
             <div className="fixed top-[70px] right-0 w-[250px] h-[300px] rounded-[15px] bg-black bg-opacity-80 flex flex-col items-center justify-center gap-8 min-[851px]:hidden z-10">
               <nav className="flex flex-col items-center gap-5">
-                {navItems.map((item, index) => (
-                 <Link
-                 href={item.id ? `#${item.id}` : "#"}
-                 scroll={true} // ensures smooth scrolling in Next.js
-                 className="flex items-center gap-2.5 font-['Inter] text-[18px] max-[1100px]:text-[16px] leading-[120%] tracking-[0] font-medium text-white cursor-pointer"
-               >
-                 {item.name}
-                 {item.hasDropdown && <ChevronDownIcon className="w-[18px] h-[18px]" />}
-               </Link>
-               
-                ))}
+              {navItems.map((item, index) => (
+  <NavigationMenuItem key={index}>
+    {item.name === "Pages" ? (
+      <CustomDropdown
+        options={[
+          { label: "About", id: "about" },
+          { label: "Team", id: "team" },
+          { label: "Pricing", id: "pricing" },
+          { label: "Blogs", id: "blog" }
+        ]}
+        selected={City}
+        setSelected={setToCity}
+      />
+    ) : (
+      <NavigationMenuLink asChild>
+        <Link
+          href={item.id ? `#${item.id}` : "#"}
+          scroll={true}
+          className="flex items-center gap-2.5 font-['Inter'] text-[18px] max-[1100px]:text-[16px] font-medium text-white cursor-pointer"
+        >
+          {item.name}
+        </Link>
+      </NavigationMenuLink>
+    )}
+  </NavigationMenuItem>
+))}
+
+
               </nav>
               <Button className=" px-6 py-[15px] bg-[#cdff08] rounded-[58px] text-neutral-05 font-big-buttton-2 w-40">
                 Get Starte
