@@ -99,7 +99,7 @@ export default function TestimonialsSection() {
                   src="/quote.svg"
                 />
                 <div className="flex flex-col items-start gap-[15px] w-full">
-                  <p className="font-['Inter'] text-[#ebebeb] text-[18px] leading-[160%] overflow-hidden text-ellipsis [display:-webkit-box] [-webkit-line-clamp:4] [-webkit-box-orient:vertical] max-[1100px]:text-[16px] max-[767px]:text-[14px]">
+                  <p className="font-['Inter'] text-[#ebebeb] text-[18px] leading-[160%] max-[1000px]:leading-[130%] overflow-hidden text-ellipsis [display:-webkit-box] [-webkit-line-clamp:4] [-webkit-box-orient:vertical] max-[1100px]:text-[16px] max-[767px]:text-[14px]">
                     {testimonial.quote}
                   </p>
 
@@ -125,10 +125,10 @@ export default function TestimonialsSection() {
 
               <CardFooter className="flex items-center gap-4 p-0 w-full">
                 <div className="flex flex-col items-start justify-center gap-2">
-                  <h4 className="font-semibold text-[#ffffff] text-[18px] leading-[160%] max-[1100px]:text-[16px]">
+                  <h4 className="font-semibold text-[#ffffff] text-[18px] leading-[160%] max-[1000px]:leading-[130%] max-[1100px]:text-[16px]">
                     {testimonial.name}
                   </h4>
-                  <p className="opacity-80 font-medium text-[#ebebeb] text-[16px] leading-[160%] max-[1100px]:text-[14px] max-[767px]:text-[13px]">
+                  <p className="opacity-80 font-medium text-[#ebebeb] text-[16px] leading-[160%] max-[1000px]:leading-[130%] max-[1100px]:text-[14px] max-[767px]:text-[13px]">
                     {testimonial.position}
                   </p>
                 </div>

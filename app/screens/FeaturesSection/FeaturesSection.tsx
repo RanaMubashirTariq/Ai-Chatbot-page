@@ -19,11 +19,11 @@ export default function FeaturesSection  () {
       </div>
              <div className="flex items-center justify-between gap-[30px] w-full max-[500px]:flex-col max-[500px]:gap-5 ">
                    <div className="w-full max-w-[570px] h-auto">
-                        <img src="featuresSection-left.png" className="w-full h-full object-contain" alt="" />
+                        <img src="featuresSection-left.png" className="w-full h-full object-contain cursor-zoom-in" alt="" />
                    </div>
 
                    <div className="w-full max-w-[570px] h-auto">
-                        <img src="featuresSection-right.png" className="w-full h-full object-contain" alt="" />
+                        <img src="featuresSection-right.png" className="w-full h-full object-contain cursor-zoom-in" alt="" />
                    </div>
              </div>
     </section>

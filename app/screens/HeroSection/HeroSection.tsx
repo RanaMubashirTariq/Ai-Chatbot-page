@@ -201,7 +201,7 @@ export default function HeroSection  () {
               The Next-Gen Chatbot
             </h1>
 
-            <p className="font-['Inter'] text-white text-center text-[16px] font-normal leading-[160%] max-[850px]:leading-[100%] tracking-[0] max-[1000px]:text-[14px]  ">
+            <p className="font-['Inter'] text-white text-center text-[16px] font-normal leading-[160%] max-[850px]:leading-[130%] tracking-[0] max-[1000px]:text-[14px]  ">
               Meet Aidy, the next-gen AI chatbot designed to enhance
               conversations with intuitive responses, seamless integration, and
               powerful automation.
@@ -226,7 +226,7 @@ export default function HeroSection  () {
                </div>
 
                <div className="absolute z-0 top-[630px] max-[1100px]:top-[380px] max-[860px]:top-[270px] max-[840px]:top-[220px] max-[767px]:top-[150px] max-[560px]:top-[80px] max-[500px]:top-[30px] max-[380px]:top-[10px] max-[365px]:top-5 max-[340px]:top-[10px]   left-1/2 -translate-x-1/2 w-full max-w-[1170px] h-[825px]  max-[1100px]:px-[100px] max-[1000px]:px-[50px] max-[767px]:px-[25px]">
-                    <img src="/dash-1.svg" className="w-full h-full object-contain" alt="" />
+                    <img src="/dash-1.svg" className="w-full h-full object-contain cursor-zoom-in" alt="" />
                </div>
       </section>
   );

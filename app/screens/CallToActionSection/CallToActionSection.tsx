@@ -26,7 +26,7 @@ export default function CallToActionSection  ()  {
             <h2 className="w-full max-w-[555px] font-semibold font-['Inter'] text-white text-center text-[48px] leading-[120%]  max-[1100px]:text-[36px] max-[1100px]:leading-[120%] max-[767px]:text-[28px] max-[1000px]:leading-[120%]">
               Experience the Future of AI With Aidy
             </h2>
-            <p className="font-regular font-['Inter'] text-center text-[18px] leading-[160%] text-[#ebebeb] tracking-[0] max-[1100px]:text-[16px] max-[1100px]:leading-[120%] max-[767px]:text-[14px] max-[1000px]:leading-[120%] ">
+            <p className="font-regular font-['Inter'] text-center text-[18px] leading-[160%] text-[#ebebeb] tracking-[0] max-[1100px]:text-[16px] max-[1100px]:leading-[130%] max-[767px]:text-[14px]  ">
               Join millions and upgrade to Aidy today to feel the difference!
             </p>
           </div>

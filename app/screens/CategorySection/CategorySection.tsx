@@ -83,7 +83,7 @@ export default function CategorySection  ()  {
             </h2>
           </div>
 
-          <p className="max-w-[717px]  text-[#ebebeb] font-['Inter'] font-regular  text-center text-[18px] leading-[160%] max-[1100px]:text-[16px] max-[1100px]:leading-[120%] max-[767px]:text-[14px] max-[767px]:leading-[120%]">
+          <p className="max-w-[717px]  text-[#ebebeb] font-['Inter'] font-regular  text-center text-[18px] leading-[160%] max-[1100px]:text-[16px] max-[1100px]:leading-[130%] max-[767px]:text-[14px]">
             The next-level chatbot assistant you need
           </p>
         </div>
@@ -120,7 +120,7 @@ export default function CategorySection  ()  {
                   <h4 className="w-full font-['Inter'] font-semibold  text-[#ffffff] text-[24px] leading-[130%]  max-[1100px]:text-[20px] max-[1100px]:leading-[120%] max-[767px]:text-[18px] max-[767px]:leading-[120%]">
                     {card.title}
                   </h4>
-                  <p className="w-full font-['Inter'] font-regular text-[18px] leading-[160%] text-[#ebebeb] max-[1100px]:text-[16px] max-[1100px]:leading-[120%] max-[767px]:text-[14px] max-[767px]:leading-[120%]">
+                  <p className="w-full font-['Inter'] font-regular text-[18px] leading-[160%] text-[#ebebeb] max-[1100px]:text-[16px] max-[1100px]:leading-[140%] max-[767px]:text-[14px] max-[767px]:leading-[130%]">
                     {card.description}
                   </p>
                 </div>

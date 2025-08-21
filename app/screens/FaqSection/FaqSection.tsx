@@ -80,7 +80,7 @@ export default function FaqSection  () {
         </div>
 
         <CardContent className="p-0">
-          <p className="w-[425.12px] max-[1250px]:w-[100%] font-regular font-['Inter'] text-[18px] max-[1100px]:text-[16px] leading-[160%] text-white text-center  max-[767px]:text-[14px] max-[1000px]:leading-[120%] max-[680px]:text-[12px] max-[680px]:leading-[120%] max-[680px]:w-[100%]">
+          <p className="w-[425.12px] max-[1250px]:w-[100%] font-regular font-['Inter'] text-[18px] max-[1100px]:text-[16px] leading-[160%] text-white text-center  max-[767px]:text-[14px] max-[1000px]:leading-[130%] max-[680px]:text-[12px]  max-[680px]:w-[100%]">
             Your quick guide to common inquiries and solutions.
           </p>
         </CardContent>
@@ -115,7 +115,7 @@ export default function FaqSection  () {
                       {item.number}
                     </span>
                     <h4
-                      className={`font-regular  font-['Inter'] text-[24px] leading-[160%] 'bg-[#cdff09]'  ${isOpen ? "text-[#18181d]"  : "text-white"} max-[1300px]:text-[18px] max-[1250px]:leading-[120%] max-[1000px]:text-[18px] max-[1000px]:leading-[120%] max-[767px]:text-[16px] max-[680px]:leading-[120%]`}
+                      className={`font-regular  font-['Inter'] text-[24px] leading-[160%] 'bg-[#cdff09]'  ${isOpen ? "text-[#18181d]"  : "text-white"} max-[1300px]:text-[18px] max-[1300px]:leading-[130%] max-[1000px]:text-[18px]  max-[767px]:text-[16px]`}
                     >
                       {item.question}
                     </h4>
@@ -130,8 +130,8 @@ export default function FaqSection  () {
                   </span>
                 </AccordionTrigger>
                 {item.answer && (
-                  <AccordionContent className="pl-14 pr-0 py-0 ">
-                    <p className="w-[414px] max-[1250px]:w-[100%] mt-[-1.00px] font-regular  font-['Inter'] text-[16px] max-[767px]:text-[14px] max-[500px]:text-[13px] leading-[160%] ">
+                  <AccordionContent className="pl-14 pr-0 py-0 max-[767px]:pl-[30px]">
+                    <p className="w-[414px] max-[1250px]:w-[100%] mt-[-1.00px] font-regular  font-['Inter'] text-[16px] max-[767px]:text-[14px] max-[500px]:text-[13px] leading-[160%] max-[1000px]:leading-[130%]">
                       {item.answer}
                     </p>
                   </AccordionContent>

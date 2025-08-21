@@ -71,7 +71,7 @@ export default function ContactUsSection  () {
           <CardTitle className="font-['Inter'] font-medium text-[28px] leading-[120%] tracking-[0] text-[#ffffff] max-[1100px]:text-[20px] max-[1100px]:leading-[120%] max-[680px]:text-[18px] max-[680px]:leading-[120%]">
             Get a quote
           </CardTitle>
-          <CardDescription className="max-w-[397px] font-['Inter'] font-regular text-[18px] leading-[160%] tracking-[0] text-[#ebebeb]  max-[1100px]:text-[16px] max-[1100px]:leading-[120%] max-[767px]:text-[14px] max-[680px]:leading-[120%]">
+          <CardDescription className="max-w-[397px] font-['Inter'] font-regular text-[18px] leading-[160%] tracking-[0] text-[#ebebeb]  max-[1100px]:text-[16px] max-[1100px]:leading-[130%] max-[767px]:text-[14px]">
             Fill up the form and our Team will get back to you within 24 hours.
           </CardDescription>
         </CardHeader>

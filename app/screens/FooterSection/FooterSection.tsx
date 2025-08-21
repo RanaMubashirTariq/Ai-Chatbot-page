@@ -73,7 +73,7 @@ export default function FooterSection  () {
               key={`footer-section-${index}`}
               className="flex flex-col items-start gap-6 max-[767px]:gap-3"
             >
-              <h3 className="font-semibold font-['Inter'] text-[18px] max-[1100px]:text-[16px] max-[767px]:text-[14px] max-[1000px]:text-[16px] leading-[160%] text-white whitespace-nowrap max-[550px]:text-[16px] max-[550px]:leading-[120%]">
+              <h3 className="font-semibold font-['Inter'] text-[18px] max-[1100px]:text-[16px] max-[767px]:text-[14px] max-[1000px]:text-[16px] leading-[160%] text-white whitespace-nowrap max-[550px]:text-[16px] max-[1000px]:leading-[130%]">
                 {section.title}
               </h3>
               <nav className="flex flex-col items-start gap-[15px]">
@@ -81,7 +81,7 @@ export default function FooterSection  () {
                         <a
                           key={`${section.title}-link-${linkIndex}`}
                           href={link.id ? `#${link.id}` : "#"}
-                          className="font-regular font-['Inter'] text-[18px] max-[1100px]:text-[16px] max-[767px]:text-[14px] max-[1000px]:text-[16px] leading-[160%] text-[#ebebeb] whitespace-nowrap hover:text-white transition-colors max-[550px]:text-[14px] max-[550px]:leading-[120%]"
+                          className="font-regular font-['Inter'] text-[18px] max-[1100px]:text-[16px] max-[767px]:text-[14px] max-[1000px]:text-[16px] leading-[160%] text-[#ebebeb] whitespace-nowrap hover:text-white transition-colors max-[550px]:text-[14px] max-[1000px]:leading-[130%]"
                         >
                           {link.name}
                         </a>
@@ -93,11 +93,11 @@ export default function FooterSection  () {
 
           {/* Newsletter Section */}
           <div className="flex flex-col items-start gap-6 max-[767px]:gap-3">
-            <h3 className="font-semibold font-['Inter'] text-[18px] max-[1100px]:text-[16px] max-[767px]:text-[14px] max-[1000px]:text-[16px] text-white leading-[160%] whitespace-nowrap max-[550px]:text-[16px] max-[550px]:leading-[120%]">
+            <h3 className="font-semibold font-['Inter'] text-[18px] max-[1100px]:text-[16px] max-[767px]:text-[14px] max-[1000px]:text-[16px] text-white leading-[160%] whitespace-nowrap max-[550px]:text-[16px] max-[1000px]:leading-[130%]">
               Newsletter
             </h3>
             <div className="flex flex-col items-start gap-5">
-              <p className="w-[270px] font-regular font-['Inter'] text-[18px] max-[1100px]:text-[16px]  max-[767px]:text-[14px] max-[1000px]:text-[16px] text-[#ebebeb] leading-[160%] max-[550px]:text-[14px] max-[550px]:leading-[120%]">
+              <p className="w-[270px] font-regular font-['Inter'] text-[18px] max-[1100px]:text-[16px]  max-[767px]:text-[14px] max-[1000px]:text-[16px] text-[#ebebeb] leading-[160%] max-[550px]:text-[14px] max-[1000px]:leading-[130%]">
                 Join our newsletter for exclusive updates and insights.
               </p>
               <div className="flex w-[270px] items-center gap-2 bg-[#ffffff1a] rounded-[1000px] p-1">
@@ -122,7 +122,7 @@ export default function FooterSection  () {
       {/* Copyright Section */}
      
       <div className="flex flex-col items-center gap-10 pt-0 pb-[60px] max-[767px]:pb-10  px-[135px] w-full max-[1100px]:px-[100px] max-[1000px]:px-[50px] max-[680px]:px-[25px] max-[767px]:gap-[20px] max-[767px]:pb-[32px]">
-        <p className="text-[#ebebeb] font-['Inter'] text-center font-medium text-[18px] max-[1100px]:text-[16px] max-[1000px]:text-[16px] leading-[160%] max-[767px]:text-[14px] max-[767px]:leading-[120%]">
+        <p className="text-[#ebebeb] font-['Inter'] text-center font-medium text-[18px] max-[1100px]:text-[16px] max-[1000px]:text-[16px] leading-[160%] max-[767px]:text-[14px] max-[1000px]:leading-[130%]">
           © 2024 — All Right Reserved, Built by Grooic
         </p>
       </div>

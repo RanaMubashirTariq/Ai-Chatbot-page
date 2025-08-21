@@ -26,11 +26,11 @@ export default function FeaturesOverviewSection  () {
               </Badge>
 
               <h2 className="font-['Inter'] font-semibold text-[48px] leading-[120%]  text-[#ffffff]  max-w-[500px] max-[1000px]:max-w-[100%] max-[1100px]:text-[36px] max-[767px]:text-[28px] max-[767px]:leading-[100%]">
-                Clean and Efficient Code Generation
+                Clean and Efficient <br className="hidden max-[500px]:block"/> Code Generation
               </h2>
             </div>
 
-            <p className="max-w-[500px] max-[1000px]:max-w-[100%]  font-['Inter'] text-[18px] text-[#ebebeb] font-regular leading-[160%] max-[1100px]:text-[16px] max-[767px]:text-[14px] max-[767px]:leading-[100%] max-[365px]:text-[12px]">
+            <p className="max-w-[500px] max-[1000px]:max-w-[100%]  font-['Inter'] text-[18px] text-[#ebebeb] font-regular leading-[160%] max-[1100px]:text-[16px] max-[767px]:text-[14px] max-[767px]:leading-[140%] max-[365px]:text-[12px]">
               Boost your development speed with Aidy&#39;s clean and efficient
               code generation.
             </p>
@@ -44,7 +44,7 @@ export default function FeaturesOverviewSection  () {
                 <img className="w-6 h-6 max-[365px]:h-4 max-[365px]:w-4" alt="Icons" src="/check-icon.png" />
               </div>
 
-              <p className="font-['Inter'] text-[16px] text-[#ebebeb] leading-[160%] font-medium max-[767px]:text-[14px] max-[767px]:leading-[100%] max-[365px]:text-[12px]">
+              <p className="font-['Inter'] text-[16px] text-[#ebebeb] leading-[160%] font-medium max-[767px]:text-[14px] max-[767px]:leading-[130%] max-[365px]:text-[12px]">
                 {item.text}
               </p>
             </div>
@@ -52,10 +52,10 @@ export default function FeaturesOverviewSection  () {
         </div>
       </div>
 
-      <Card className="relative w-full max-w-[595px] h-[425px] bg-[#ffffff0f] rounded-[28px] overflow-hidden shadow-[0px_4px_4px_#00000040] border-none max-[1300px]:h-[430px] max-[1300px]:max-w-[500px] max-[1100px]:max-w-[400px] max-[1100px]:h-[370px] max-[1000px]:max-w-[100%] max-[1000px]:h-[auto] max-[500px]:max-w-[100%] max-[500px]:h-[300px]">
+      <Card className="relative w-full max-w-[595px] h-[425px] bg-[#ffffff0f] cursor-zoom-in rounded-[28px] overflow-hidden shadow-[0px_4px_4px_#00000040] border-none max-[1300px]:h-[430px] max-[1300px]:max-w-[500px] max-[1100px]:max-w-[400px] max-[1100px]:h-[370px] max-[1000px]:max-w-[100%] max-[1000px]:h-[auto] max-[500px]:max-w-[100%] max-[500px]:h-[300px]">
         <div className="relative h-[425px]">
           <img
-            className="absolute w-[560px] h-[425px] top-[35px] left-[35px] max-[1300px]:h-[430px]  max-[1300px]:w-[500px] max-[1100px]:max-w-[400px] max-[1100px]:h-[340px] max-[1000px]:w-[100%] max-[1000px]:h-full max-[500px]:w-[100%] max-[500px]:h-[300px]"
+            className="absolute w-[560px] h-[425px] top-[35px] left-[35px]  max-[1300px]:h-[430px]  max-[1300px]:w-[500px] max-[1100px]:max-w-[400px] max-[1100px]:h-[340px] max-[1000px]:w-[100%] max-[1000px]:h-full max-[500px]:w-[100%] max-[500px]:h-[300px]"
             alt="Code example"
             src="/imge.png"
           />
