@@ -163,7 +163,7 @@ export default function HeroSection  () {
 
           {/* Desktop CTA Button */}
           <div className=" min-[851px]:block max-[880px]:hidden ">
-            <Button className="w-[174px] h-[52px] max-[1100px]:w-[160px] max-[1100px]:h-10 z-10 cursor-pointer transform transition-transform duration-300 hover:scale-90  px-6 py-[15px] bg-[#cdff08] hover:bg-[#cdff08]/90 font-['Inter'] font-medium text-[18px] leading-[120%] max-[1100px]:text-[16px] max-[767px]:text-[14px] rounded-[58px] ">
+            <Button className="w-[174px] h-[52px] max-[1100px]:w-[160px] max-[1100px]:h-10 z-10 cursor-pointer transform transition-transform duration-300 hover:scale-90  px-6 py-[15px] bg-[#cdff08] hover:bg-[#cdff08]/90 font-['Inter'] font-medium text-[#09090f] text-[18px] leading-[120%] max-[1100px]:text-[16px] max-[767px]:text-[14px] rounded-[58px] ">
               Get Started
               <img src='/arrow.svg' className="ml-2 w-4 h-4" />
             </Button>

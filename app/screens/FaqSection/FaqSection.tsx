@@ -131,7 +131,7 @@ export default function FaqSection  () {
                 </AccordionTrigger>
                 {item.answer && (
                   <AccordionContent className="pl-14 pr-0 py-0 max-[767px]:pl-[30px]">
-                    <p className="w-[414px] max-[1250px]:w-[100%] mt-[-1.00px] font-regular  font-['Inter'] text-[16px] max-[767px]:text-[14px] max-[500px]:text-[13px] leading-[160%] max-[1000px]:leading-[130%]">
+                    <p className="w-[414px] max-[1250px]:w-[100%] mt-[-1.00px] font-regular text-[#09090f] font-['Inter'] text-[16px] max-[767px]:text-[14px] max-[500px]:text-[13px] leading-[160%] max-[1000px]:leading-[130%]">
                       {item.answer}
                     </p>
                   </AccordionContent>
