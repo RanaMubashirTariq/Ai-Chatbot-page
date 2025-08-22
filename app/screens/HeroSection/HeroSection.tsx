@@ -1,6 +1,6 @@
 'use client'
 import { ArrowRightIcon, ChevronDownIcon, Menu as MenuIcon, X as XIcon } from "lucide-react";
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import { Button } from "../../components/ui/button";
 import {
   NavigationMenu,
@@ -13,6 +13,28 @@ import Link from "next/link";
 export default function HeroSection  () {
   const [menuOpen, setMenuOpen] = useState(false);
   const [City, setToCity] = useState("Pages");
+  const [scrolled, setScrolled] = useState(false);
+
+
+
+   useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  
+
+
+
+
+
+
+
+
+
   const navItems = [
     { name: "Home",  id:'' , hasDropdown: false },
     { name: "Pages", id:'' , hasDropdown: true },
@@ -95,8 +117,12 @@ export default function HeroSection  () {
         {/* Decorative blurred elements */}
 
         {/* Navigation bar */}
-        <header className="absolute top-0 left-0 w-full flex items-center justify-between px-[135px] py-[25px] z-10  max-[1300px]:px-[100px] max-[1100px]:px-[50px] max-[767px]:px-[25px]">
-          <div className="flex items-center w-[119.5px] h-[38px] max-[850px]:w-[80px] max-[850px]:h-[30px]">
+        <header className={`fixed top-0 left-0 w-full z-50 flex items-center justify-between px-[135px] py-[25px] max-[1300px]:px-[100px] max-[1100px]:px-[50px] max-[767px]:px-[25px] transition-all duration-300 ${
+               scrolled ? "backdrop-blur-sm bg-black/30" : ""
+                 }`}
+>
+
+          <div className="flex items-center justify-between w-[119.5px] h-[38px] max-[850px]:w-[80px] max-[850px]:h-[30px]">
             <img src="/logo.png" className="h-full w-full object-contain" alt="Logo" />
           </div>
 
@@ -137,7 +163,7 @@ export default function HeroSection  () {
 
           {/* Desktop CTA Button */}
           <div className=" min-[851px]:block max-[880px]:hidden ">
-            <Button className="w-[174px] h-[52px] z-10 cursor-pointer transform transition-transform duration-300 hover:scale-90  px-6 py-[15px] bg-[#cdff08] hover:bg-[#cdff08]/90 font-['Inter'] font-medium text-[18px] leading-[120%] max-[1100x]:text-[16px] max-[767px]:text-[14px] rounded-[58px] ">
+            <Button className="w-[174px] h-[52px] max-[1100px]:w-[160px] max-[1100px]:h-10 z-10 cursor-pointer transform transition-transform duration-300 hover:scale-90  px-6 py-[15px] bg-[#cdff08] hover:bg-[#cdff08]/90 font-['Inter'] font-medium text-[18px] leading-[120%] max-[1100px]:text-[16px] max-[767px]:text-[14px] rounded-[58px] ">
               Get Started
               <img src='/arrow.svg' className="ml-2 w-4 h-4" />
             </Button>
@@ -157,32 +183,29 @@ export default function HeroSection  () {
             <div className="fixed top-[70px] right-0 w-[250px] h-[300px] rounded-[15px] bg-black bg-opacity-80 flex flex-col items-center justify-center gap-8 min-[851px]:hidden z-10">
               <nav className="flex flex-col items-center gap-5">
               {navItems.map((item, index) => (
-  <NavigationMenuItem key={index}>
-    {item.name === "Pages" ? (
-      <CustomDropdown
-        options={[
-          { label: "About", id: "about" },
-          { label: "Team", id: "team" },
-          { label: "Pricing", id: "pricing" },
-          { label: "Blogs", id: "blog" }
-        ]}
-        selected={City}
-        setSelected={setToCity}
-      />
-    ) : (
-      <NavigationMenuLink asChild>
-        <Link
-          href={item.id ? `#${item.id}` : "#"}
-          scroll={true}
-          className="flex items-center gap-2.5 font-['Inter'] text-[18px] max-[1100px]:text-[16px] font-medium text-white cursor-pointer"
-        >
-          {item.name}
-        </Link>
-      </NavigationMenuLink>
-    )}
-  </NavigationMenuItem>
-))}
-
+        item.name === "Pages" ? (
+          <CustomDropdown
+            key={index}
+            options={[
+              { label: "About", id: "about" },
+              { label: "Team", id: "team" },
+              { label: "Pricing", id: "pricing" },
+              { label: "Blogs", id: "blog" }
+            ]}
+            selected={City}
+            setSelected={setToCity}
+          />
+        ) : (
+          <Link
+            key={index}
+            href={item.id ? `#${item.id}` : "#"}
+            scroll={true}
+            className="flex items-center gap-2.5 font-['Inter'] text-[18px] max-[1100px]:text-[16px] font-medium text-white cursor-pointer"
+          >
+            {item.name}
+          </Link>
+        )
+      ))}
 
               </nav>
               <Button className=" px-6 py-[15px] bg-[#cdff08] rounded-[58px] text-neutral-05 font-big-buttton-2 w-40">
