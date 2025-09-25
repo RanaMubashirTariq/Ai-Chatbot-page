@@ -14,6 +14,7 @@ export default function HeroSection  () {
   const [menuOpen, setMenuOpen] = useState(false);
   const [City, setToCity] = useState("Pages");
   const [scrolled, setScrolled] = useState(false);
+const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
 
 
@@ -41,6 +42,8 @@ export default function HeroSection  () {
     { name: "Pricing", id:'pricing' , hasDropdown: false },
     { name: "Contact Us", id:'contact' , hasDropdown: false },
   ];
+
+  
 
   const CustomDropdown = ({
     options,

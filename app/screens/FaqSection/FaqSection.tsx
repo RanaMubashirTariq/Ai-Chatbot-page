@@ -87,7 +87,7 @@ export default function FaqSection  () {
       </Card>
 
       {/* Right side - FAQ accordion */}
-      <div className="flex flex-col gap-[30px] relative w-full max-w-[570px] h-[587px] max-[1250px]:max-w-[100%] max-[1250px]:h-auto">
+      <div className="flex flex-col gap-[30px] relative w-full max-w-[570px] h-[587px] max-[1250px]:max-w-[100%] max-[1250px]:h-auto ">
         <Accordion
           type="single"
           collapsible
@@ -103,11 +103,11 @@ export default function FaqSection  () {
                 value={item.id}
                 className={
                   isOpen
-                    ? "bg-[#cdff09] rounded-3xl shadow-[0px_12px_36px_#e19f6d1f] p-[30px]"
-                    : "mb-0"
+                    ? "bg-[#cdff09] rounded-3xl shadow-[0px_12px_36px_#e19f6d1f] p-[30px] border-none "
+                    : "mb-0 border-none"
                 }
               >
-                <AccordionTrigger className="flex justify-between items-center gap-5 py-0 px-0 [&>svg]:hidden">
+                <AccordionTrigger className="flex justify-between items-center gap-5 py-0 px-0 [&>svg]:hidden hover:no-underline">
                   <div className="flex items-center gap-5 py-4 relative max-[1100px]:w-[100%] max-[500px]:gap-2 max-[340px]:pr-8">
                     <span
                       className={`flex justify-center items-center w-9 h-[43px] max-[500px]:w-5 max-[500px]:h-5 mt-[-1.00px] font-['Inter'] text-[24px] max-[1100px]:text-[18px] underline-none text-center tracking-[0] leading-[130%] whitespace-nowrap ${isOpen ? "font-medium text-[#18181d]" : "font-normal text-white"} max-[1250px]:text-[20px] max-[1250px]:leading-[120%] max-[1000px]:text-[18px] max-[1000px]:leading-[120%] max-[767px]:text-[16px] max-[680px]:leading-[120%] max-[360px]:w-[20px] max-[360px]:h-[30px]`}
