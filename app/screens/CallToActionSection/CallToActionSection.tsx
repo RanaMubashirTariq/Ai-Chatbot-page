@@ -33,7 +33,7 @@ export default function CallToActionSection  ()  {
 
           <div className="flex items-start gap-4 max-[365px]:flex-col max-[365px]:gap-[12px] max-[365px]:items-center max-[365px]:justify-center max-[365px]:w-[100%]">
             <Button className="w-[174px] h-[52] max-[767px]:w-[140px] max-[767px]:h-10 cursor-pointer transform transition-transform duration-300 hover:scale-90  max-[365px]:w-full px-6 py-[15px] bg-[#cdff09] hover:bg-[#ccff09]/90 rounded-[58px]  ">
-              <span className="font-medium font-['Inter'] text-[18px] leading-[120%] max-[767px]:text-[14px] text-[#09090f]">
+              <span className="font-medium font-['Inter'] text-[18px] max-[1500px]:text-[16px] leading-[120%] max-[767px]:text-[14px] text-[#09090f]">
                 Get Started
               </span>
               <img src='/arrow.svg' className="ml-2 w-4 h-4" />
@@ -43,7 +43,7 @@ export default function CallToActionSection  ()  {
               
               className="w-[189px] h-[52] max-[767px]:w-[140px] max-[767px]:h-10 cursor-pointer transform transition-transform duration-300 hover:scale-90  max-[365px]:w-full px-6 py-[15px] rounded-[58px] border-[1.5px] border-solid border-[#eaeaea] hover:bg-[#eaeaea]/20"
             >
-              <span className="font-medium font-['Inter'] text-[18px] leading-[120%] max-[767px]:text-[14px] text-white">
+              <span className="font-medium font-['Inter'] text-[18px] max-[1500px]:text-[16px] leading-[120%] max-[767px]:text-[14px] text-white">
                 Request a Demo
               </span>
             </Button>
