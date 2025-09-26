@@ -59,7 +59,7 @@ export default function FooterSection  () {
             <img
               className="w-6 h-6 cursor-pointer transform transition-transform duration-300 hover:scale-90 "
               alt="Social media icon"
-              src="/frame-3.svg"
+              src="/you-tube.png"
             />
           </div>
         </div>

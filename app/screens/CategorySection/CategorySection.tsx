@@ -134,7 +134,7 @@ export default function CategorySection  ()  {
         <span className="font-big-buttton-2 text-[18px] max-[1100px]:text-[16px] max-[767px]:text-[14px] max-[767px]:leading-[100%] font-medium text-[#09090f] font-['Inter'] leading-[120%]  max-[680px]:text-[14px] max-[680px]:leading-[120%]">
           Get Started
         </span>
-        <ArrowRightIcon className="ml-2 h-4 w-4" />
+        <img src='/black-arrow.png' className="ml-2 h-4 w-4" />
       </Button>
     </section>
   );
