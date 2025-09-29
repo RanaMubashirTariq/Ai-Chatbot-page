@@ -69,7 +69,7 @@ export default function TestimonialsSection() {
   };
 
   return (
-    <section className="flex flex-col items-center gap-14 max-[767px]:gap-8 py-16 px-[135px] w-full max-[1300px]:px-[100px] max-[1000px]:px-[50px] max-[767px]:px-[25px] max-[680px]:py-[32px]">
+    <section className="flex flex-col items-center gap-14 max-[767px]:gap-8 py-16 px-[135px] w-full max-[1300px]:px-[100px] max-[1100px]:px-[50px] max-[767px]:px-[25px] max-[680px]:py-[32px]">
       {/* Header */}
       <div className="flex flex-col items-center gap-6">
         <div className="flex flex-col items-center gap-4">
@@ -92,7 +92,7 @@ export default function TestimonialsSection() {
             <Card
               key={index}
               data-testimonial-card="true"
-              className="max-[400px]:w-[300px] max-[350px]:w-[260px] w-[370px] min-w-[300px] max-[400px]:min-w-[300px] max-[350px]:min-w-[260px] max-[1100px]:min-w-[320px] max-[767px]:w-[calc(100%-50px)] max-[767px]:min-w-[calc(100%-50px)] mx-[25px] flex-shrink-0 snap-center flex flex-col items-start gap-8 px-[30px] py-[25px] bg-[#18181d] rounded-[30px] shadow-[12px_8px_36px_#0a1d0f0f]  max-[680px]:gap-4 max-[1100px]:px-[15px] max-[1100px]:py-[15px]"
+              className="max-[400px]:w-[300px] max-[350px]:w-[260px] w-[370px] min-w-[300px] max-[400px]:min-w-[300px] max-[350px]:min-w-[260px] max-[1100px]:min-w-[320px] max-[767px]:w-[calc(100%-50px)] max-[767px]:min-w-[calc(100%-50px)] max-[500px]:mx-[25px] mr-[30px] flex-shrink-0 snap-center flex flex-col items-start gap-8 px-[30px] py-[25px] bg-[#18181d] rounded-[30px] shadow-[12px_8px_36px_#0a1d0f0f]  max-[680px]:gap-4 max-[1100px]:px-[15px] max-[1100px]:py-[15px]"
             >
               <CardContent className="flex flex-col items-start gap-[22px] p-0 w-full max-[680px]:gap-4">
                 <img
