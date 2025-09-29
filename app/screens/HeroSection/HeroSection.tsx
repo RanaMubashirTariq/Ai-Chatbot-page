@@ -211,8 +211,8 @@ const [openDropdown, setOpenDropdown] = useState<string | null>(null);
       ))}
 
               </nav>
-              <Button className=" px-6 py-[15px] bg-[#cdff08] rounded-[58px] text-neutral-05 font-big-buttton-2 w-40">
-                Get Starte
+              <Button className=" px-6 py-[15px] bg-[#cdff08] rounded-[58px] text-[#000000] font-big-buttton-2 w-40">
+                Get Started
                 <img src='/arrow.svg' className="ml-2 w-4 h-4" />
               </Button>
             </div>

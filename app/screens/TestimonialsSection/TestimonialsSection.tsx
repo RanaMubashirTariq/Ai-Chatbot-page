@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from "react";
+import React, { useRef } from "react";
 import { Badge } from "../../components/ui/badge";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent, CardFooter } from "../../components/ui/card";
@@ -25,7 +25,7 @@ export default function TestimonialsSection() {
         '"This chatbot has greatly enhanced our customer service with quick, effective responses and satisfaction."',
       name: "Leslie Alexander",
       position: "Director of Saturday",
-      stars: 4.5,
+      stars: 5,
     },
     {
       quote:
@@ -39,33 +39,33 @@ export default function TestimonialsSection() {
         '"Super intuitive, easy to use, and our clients love it."',
       name: "Eleanor Pena",
       position: "Lead of Thursday",
-      stars: 4,
+      stars: 5,
     },
   ];
 
-  // Show 3 cards at a time
-  const visibleCards = 3;
-  const [startIndex, setStartIndex] = useState(0);
+  // Horizontal scroll ref
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const getScrollStep = (): number => {
+    const container = scrollRef.current;
+    if (!container) return 420;
+    const firstCard = container.querySelector<HTMLElement>('[data-testimonial-card="true"]');
+    if (!firstCard) return 420;
+    const styles = window.getComputedStyle(firstCard);
+    const marginLeft = parseFloat(styles.marginLeft) || 0;
+    const marginRight = parseFloat(styles.marginRight) || 0;
+    const width = firstCard.offsetWidth; // includes padding and border
+    return width + marginLeft + marginRight;
+  };
 
   const handleNext = () => {
-    setStartIndex((prev) =>
-      prev + 1 >= testimonials.length ? 0 : prev + 1
-    );
+    const step = getScrollStep();
+    scrollRef.current?.scrollBy({ left: step, behavior: "smooth" });
   };
 
   const handlePrev = () => {
-    setStartIndex((prev) =>
-      prev - 1 < 0 ? testimonials.length - 1 : prev - 1
-    );
-  };
-
-  // Slice the array for 3 visible cards (with wrapping)
-  const getVisibleTestimonials = () => {
-    const result = [];
-    for (let i = 0; i < visibleCards; i++) {
-      result.push(testimonials[(startIndex + i) % testimonials.length]);
-    }
-    return result;
+    const step = getScrollStep();
+    scrollRef.current?.scrollBy({ left: -step, behavior: "smooth" });
   };
 
   return (
@@ -82,15 +82,17 @@ export default function TestimonialsSection() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center gap-11 w-[1171px]">
+      <div className="flex flex-col items-center gap-11 w-full max-w-[1171px]">
         {/* Cards Container */}
         <div
-          className={`flex md:flex-row items-start justify-center gap-[30px] w-full max-[680px]:gap-4 transition-transform duration-500 ease-in-out`}
+          ref={scrollRef}
+          className={`flex items-stretch gap-0 w-full overflow-x-auto scroll-smooth snap-x snap-mandatory px-0 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden  `}
         >
-          {getVisibleTestimonials().map((testimonial, index) => (
+          {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className="max-[400px]:w-[300px] w-[370px] flex flex-col items-start gap-8 px-[30px] py-[25px] bg-[#18181d] rounded-[30px] shadow-[12px_8px_36px_#0a1d0f0f]  max-[680px]:gap-4 max-[1100px]:px-[15px] max-[1100px]:py-[15px]"
+              data-testimonial-card="true"
+              className="max-[400px]:w-[300px] max-[350px]:w-[260px] w-[370px] min-w-[300px] max-[400px]:min-w-[300px] max-[350px]:min-w-[260px] max-[1100px]:min-w-[320px] max-[767px]:w-[calc(100%-50px)] max-[767px]:min-w-[calc(100%-50px)] mx-[25px] flex-shrink-0 snap-center flex flex-col items-start gap-8 px-[30px] py-[25px] bg-[#18181d] rounded-[30px] shadow-[12px_8px_36px_#0a1d0f0f]  max-[680px]:gap-4 max-[1100px]:px-[15px] max-[1100px]:py-[15px]"
             >
               <CardContent className="flex flex-col items-start gap-[22px] p-0 w-full max-[680px]:gap-4">
                 <img
