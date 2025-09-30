@@ -181,42 +181,49 @@ const [openDropdown, setOpenDropdown] = useState<string | null>(null);
             {menuOpen ? <XIcon className="w-8 h-8" /> : <MenuIcon className="w-8 h-8" />}
           </button>
 
-          {/* Mobile Dropdown Menu */}
-          {menuOpen && (
-            <div className="fixed top-[70px] right-0 w-[250px] h-[90vh] rounded-[15px] bg-black bg-opacity-80 flex flex-col items-start pl-[30px] py-[50px] gap-8 min-[851px]:hidden z-10">
-              <nav className="flex flex-col items-start gap-5">
-              {navItems.map((item, index) => (
-        item.name === "Pages" ? (
-          <CustomDropdown
-            key={index}
-            options={[
-              { label: "About", id: "about" },
-              { label: "Team", id: "team" },
-              { label: "Pricing", id: "pricing" },
-              { label: "Blogs", id: "blog" }
-            ]}
-            selected={City}
-            setSelected={setToCity}
+          {/* Mobile Dropdown Menu (slide-in from right) */}
+          {/* Backdrop */}
+          <div
+            onClick={() => setMenuOpen(false)}
+            className={`fixed inset-0 bg-black/40 min-[851px]:hidden z-10 transition-opacity duration-300 ${menuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
           />
-        ) : (
-          <Link
-            key={index}
-            href={item.id ? `#${item.id}` : "#"}
-            scroll={true}
-            className="flex items-center gap-2.5 font-['Inter'] text-[18px] max-[1100px]:text-[16px] font-medium text-white cursor-pointer"
+          {/* Panel */}
+          <div
+            className={`fixed top-[70px] right-0 w-[250px] h-[90vh] rounded-[15px] bg-black/80 backdrop-blur-sm flex flex-col items-start pl-[30px] py-[50px] gap-8 min-[851px]:hidden z-20 transform transition-transform duration-300 ease-out ${menuOpen ? 'translate-x-0' : 'translate-x-full'}`}
           >
-            {item.name}
-          </Link>
-        )
-      ))}
+            <nav className="flex flex-col items-start gap-5">
+            {navItems.map((item, index) => (
+      item.name === "Pages" ? (
+        <CustomDropdown
+          key={index}
+          options={[
+            { label: "About", id: "about" },
+            { label: "Team", id: "team" },
+            { label: "Pricing", id: "pricing" },
+            { label: "Blogs", id: "blog" }
+          ]}
+          selected={City}
+          setSelected={setToCity}
+        />
+      ) : (
+        <Link
+          key={index}
+          href={item.id ? `#${item.id}` : "#"}
+          scroll={true}
+          onClick={() => setMenuOpen(false)}
+          className="flex items-center gap-2.5 font-['Inter'] text-[18px] max-[1100px]:text-[16px] font-medium text-white cursor-pointer"
+        >
+          {item.name}
+        </Link>
+      )
+    ))}
 
-              </nav>
-              <Button className=" px-6 py-[15px] bg-[#cdff08] rounded-[58px] text-[#000000] font-big-buttton-2 w-40 mt-10">
-                Get Started
-                <img src='/arrow.svg' className="ml-2 w-4 h-4" />
-              </Button>
-            </div>
-          )}
+            </nav>
+            <Button className=" px-6 py-[15px] bg-[#cdff08] rounded-[58px] text-[#000000] font-big-buttton-2 w-40 mt-10">
+              Get Started
+              <img src='/arrow.svg' className="ml-2 w-4 h-4" />
+            </Button>
+          </div>
         </header>
 
         {/* Hero content */}
