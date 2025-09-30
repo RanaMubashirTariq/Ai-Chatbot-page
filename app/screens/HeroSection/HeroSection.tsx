@@ -86,7 +86,7 @@ const [openDropdown, setOpenDropdown] = useState<string | null>(null);
           </svg>
         </div>
         {open && (
-          <ul className="absolute top-full mt-1 w-full bg-[#09090f] rounded-[10px] shadow z-40">
+          <ul className="absolute top-full max-[500px]:left-[70px] max-[500px]:mt-0 mt-1 w-full bg-[#09090f] rounded-[10px] shadow z-40">
             {options.map((option) => (
               <li
                 key={option.label}
@@ -183,8 +183,8 @@ const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
           {/* Mobile Dropdown Menu */}
           {menuOpen && (
-            <div className="fixed top-[70px] right-0 w-[250px] h-[300px] rounded-[15px] bg-black bg-opacity-80 flex flex-col items-center justify-center gap-8 min-[851px]:hidden z-10">
-              <nav className="flex flex-col items-center gap-5">
+            <div className="fixed top-[70px] right-0 w-[250px] h-[90vh] rounded-[15px] bg-black bg-opacity-80 flex flex-col items-start pl-[30px] py-[50px] gap-8 min-[851px]:hidden z-10">
+              <nav className="flex flex-col items-start gap-5">
               {navItems.map((item, index) => (
         item.name === "Pages" ? (
           <CustomDropdown
@@ -211,7 +211,7 @@ const [openDropdown, setOpenDropdown] = useState<string | null>(null);
       ))}
 
               </nav>
-              <Button className=" px-6 py-[15px] bg-[#cdff08] rounded-[58px] text-[#000000] font-big-buttton-2 w-40">
+              <Button className=" px-6 py-[15px] bg-[#cdff08] rounded-[58px] text-[#000000] font-big-buttton-2 w-40 mt-10">
                 Get Started
                 <img src='/arrow.svg' className="ml-2 w-4 h-4" />
               </Button>

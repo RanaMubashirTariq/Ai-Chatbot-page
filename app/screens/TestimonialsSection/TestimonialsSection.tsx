@@ -86,13 +86,13 @@ export default function TestimonialsSection() {
         {/* Cards Container */}
         <div
           ref={scrollRef}
-          className={`flex items-stretch gap-0 w-full overflow-x-auto scroll-smooth snap-x snap-mandatory px-0 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden  `}
+          className={`flex items-stretch gap-0 w-full overflow-x-auto scroll-smooth snap-x snap-mandatory px-0 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden`}
         >
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
               data-testimonial-card="true"
-              className="max-[400px]:w-[300px] max-[350px]:w-[260px] w-[370px] min-w-[300px] max-[400px]:min-w-[300px] max-[350px]:min-w-[260px] max-[1100px]:min-w-[320px] max-[767px]:w-[calc(100%-50px)] max-[767px]:min-w-[calc(100%-50px)] max-[500px]:mr-[15px] mr-[30px] flex-shrink-0 snap-center flex flex-col items-start gap-8 px-[30px] py-[25px] bg-[#18181d] rounded-[30px] shadow-[12px_8px_36px_#0a1d0f0f]  max-[680px]:gap-4 max-[1100px]:px-[15px] max-[1100px]:py-[15px]"
+              className="max-[400px]:w-[300px] max-[350px]:w-[260px] w-[370px] min-w-[300px] max-[400px]:min-w-[300px] max-[350px]:min-w-[260px] max-[1100px]:min-w-[320px] max-[767px]:w-[calc(100%-50px)] max-[767px]:min-w-[calc(100%-50px)] ml-[25px] mr-[25px] last:mr-0 flex-shrink-0 snap-center flex flex-col items-start gap-8 px-[30px] py-[25px] bg-[#18181d] rounded-[30px] shadow-[12px_8px_36px_#0a1d0f0f]  max-[680px]:gap-4 max-[1100px]:px-[15px] max-[1100px]:py-[15px]"
             >
               <CardContent className="flex flex-col items-start gap-[22px] p-0 w-full max-[680px]:gap-4">
                 <img
