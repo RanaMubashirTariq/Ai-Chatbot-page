@@ -45,7 +45,7 @@ export default function Marquee () {
     
 
     return(
-      <div className="w-full h-[239px] max-[500px]:h-[180px] max-[800px]:-mt-[100px] max-[768px]:mt-[50px] max-[400px]:mt-0 overflow-hidden relative">
+      <div className="w-full h-[239px] mt-[130px] max-[1500px]:mt-[0px] max-[500px]:h-[180px] max-[800px]:-mt-[100px] max-[768px]:mt-[50px] max-[400px]:mt-0 overflow-hidden relative">
           <div className='absolute z-10 top-0 -right-[30px] bg-[#09090f] rounded-[50%] blur-[14px] w-[158px] h-[242px] max-[767px]:hidden'/>
           <div className='absolute z-10 top-0 -left-[30px] bg-[#09090f] rounded-[50%] blur-[14px] w-[158px] h-[242px] max-[767px]:hidden'/>
       <div className=" mx-auto">

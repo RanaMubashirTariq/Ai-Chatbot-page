@@ -60,20 +60,20 @@ export default function FaqSection  () {
   const [openItem, setOpenItem] = useState("item-1");
 
   return (
-    <section className="relative flex  gap-[75px] max-[1300px]:gap-10 px-[135px] py-[65px] max-[1250px]:flex-col max-[1300px]:px-[100px] max-[1000px]:px-[50px] max-[680px]:px-[25px] max-[680px]:py-[32px] max-[680px]:gap-[32px] max-[680px]:items-center max-[680px]:justify-center max-[1000px]:py-[32px] ">
+    <section className="relative flex justify-between items-center  gap-[75px] max-[1300px]:gap-10 max-[1500px]:px-[135px] px-[200px] py-[65px] max-[1250px]:flex-col max-[1300px]:px-[100px] max-[1000px]:px-[50px] max-[680px]:px-[25px] max-[680px]:py-[32px] max-[680px]:gap-[32px] max-[680px]:items-center max-[680px]:justify-center max-[1000px]:py-[32px] ">
       {/* Left side - Header card */}
-      <Card className="flex w-[100%] max-w-[525px] h-[592px] max-[1250px]:max-w-[100%] max-[1250px]:h-auto flex-col items-center gap-8 max-[1250px]:gap-5 px-[50px] py-[103px] bg-[#18181d] rounded-[36px] max-[500px]:rounded-[20px] border-none max-[1250px]:w-[100%] max-[1250px]:px-[25px] max-[1250px]:py-[50px] max-[767px]:py-[25px]">
+      <Card className="flex w-[100%] max-[1500px]:max-w-[525px] w-[625px] h-[592px] max-[1250px]:max-w-[100%] max-[1250px]:h-auto flex-col items-center gap-8 max-[1250px]:gap-5 px-[50px] py-[103px] bg-[#18181d] rounded-[36px] max-[500px]:rounded-[20px] border-none max-[1250px]:w-[100%] max-[1250px]:px-[25px] max-[1250px]:py-[50px] max-[767px]:py-[25px]">
         <div className="flex flex-col items-center gap-10 w-full max-[1250px]:gap-5">
           <div className="w-[82.99px] h-[87.13px]   bg-[url(/group.svg)] bg-[100%_100%]" />
 
           <div className="flex flex-col items-center gap-4 w-full">
-            <Badge className="px-6 py-[9px] rounded-[20px] border border-solid border-[#cdff08] shadow-[0px_0px_0px_1px_#ffffff1a] backdrop-blur-[5px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(5px)_brightness(100%)] bg-transparent">
-              <span className="font-medium font-['Inter'] text-[16px] max-[767px]:text-[14px] leading-[120%] text-[#cdff09]">
+            <Badge className="px-6 py-[9px] max-[500px]:py-[6px] max-[500px]:px-[20px] rounded-[20px] border border-solid border-[#cdff08] shadow-[0px_0px_0px_1px_#ffffff1a] backdrop-blur-[5px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(5px)_brightness(100%)] bg-transparent">
+              <span className="font-medium font-['Inter'] max-[1500px]:text-[16px] text-[18px] max-[767px]:text-[14px] leading-[120%] text-[#cdff09]">
                 FAQs
               </span>
             </Badge>
 
-            <h2 className="font-semibold font-['Inter'] text-[48px] leading-[120%] text-white text-center max-[1100px]:text-[36px]  max-[767px]:text-[28px]">
+            <h2 className="font-semibold font-['Inter'] max-[1500px]:text-[48px] text-[56px] leading-[120%] text-white text-center max-[1100px]:text-[36px]  max-[767px]:text-[28px]">
               Frequently Asked Questions
             </h2>
           </div>
@@ -87,7 +87,7 @@ export default function FaqSection  () {
       </Card>
 
       {/* Right side - FAQ accordion */}
-      <div className="flex flex-col gap-[30px] relative w-full max-w-[570px] h-[587px] max-[1250px]:max-w-[100%] max-[1250px]:h-auto ">
+      <div className="flex flex-col gap-[30px] relative w-full max-[1700px]:max-w-[570px]  max-w-[670px] h-[587px] max-[1250px]:max-w-[100%] max-[1250px]:h-auto ">
         <Accordion
           type="single"
           collapsible

@@ -18,7 +18,7 @@ export default function Home() {
           <HeroSection/>
           </div>
           <Marquee/>
-          <FeaturesOverviewSection/>
+          <FeaturesOverviewSection/> 
           <div id="about"> 
           <FeaturesSection/>
           </div>
@@ -26,7 +26,7 @@ export default function Home() {
             <CategorySection/>
             </div>
                   <div id="blog">
-                  <TestimonialsSection/>
+                  <TestimonialsSection/> 
                   </div>
               <div id="pricing">
               <FaqSection/>

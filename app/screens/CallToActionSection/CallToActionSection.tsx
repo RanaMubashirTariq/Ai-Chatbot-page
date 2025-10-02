@@ -23,7 +23,7 @@ export default function CallToActionSection  ()  {
 
         <div className="flex flex-col items-center gap-12 max-[767px]:gap-[30px]">
           <div className="flex flex-col items-center gap-6">
-            <h2 className="w-full max-w-[555px] font-semibold font-['Inter'] text-white text-center text-[48px] leading-[120%]  max-[1100px]:text-[36px] max-[1100px]:leading-[120%] max-[767px]:text-[28px] max-[1000px]:leading-[120%]">
+            <h2 className="w-full max-[1500px]:max-w-[555px] max-w-[655px] font-semibold font-['Inter'] text-white text-center max-[1500px]:text-[48px] text-[56px] leading-[120%]  max-[1100px]:text-[36px] max-[1100px]:leading-[120%] max-[767px]:text-[28px] max-[1000px]:leading-[120%]">
               Experience the Future of AI With Aidy
             </h2>
             <p className="font-regular font-['Inter'] text-center text-[18px] leading-[160%] text-[#ebebeb] tracking-[0] max-[1100px]:text-[16px] max-[1100px]:leading-[130%] max-[767px]:text-[14px]  ">

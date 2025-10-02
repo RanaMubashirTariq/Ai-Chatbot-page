@@ -68,17 +68,17 @@ export default function CategorySection  ()  {
   ];
 
   return (
-    <section className="flex flex-col w-full items-center gap-12 py-16 px-[135px] max-[1300px]:px-[100px] max-[1000px]:px-[50px] max-[767px]:px-[25px]  max-[1000px]:py-[32px]">
+    <section className="flex flex-col w-full items-center gap-12 py-16 max-[1500px]:px-[135px] px-[200px] max-[1300px]:px-[100px] max-[1000px]:px-[50px] max-[767px]:px-[25px]  max-[1000px]:py-[32px]">
       <div className="flex flex-col items-center gap-14 w-full max-[680px]:gap-8">
         <div className="flex flex-col items-center gap-6">
           <div className="flex flex-col items-center gap-4 max-[680px]:gap-2">
-            <Badge className="px-6 py-[9px] rounded-[20px] border-[#cdff08] shadow-[0px_0px_0px_1px_#ffffff1a] backdrop-blur-[5px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(5px)_brightness(100%)] bg-transparent">
-              <span className="font-medium font-['Inter] text-[16px] max-[767px]:text-[14px] leading-[120%] tracking-[0]  text-[#cdff09]">
+            <Badge className="px-6 py-[9px] max-[500px]:py-[6px] max-[500px]:px-[20px] rounded-[20px] border-[#cdff08] shadow-[0px_0px_0px_1px_#ffffff1a] backdrop-blur-[5px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(5px)_brightness(100%)] bg-transparent">
+              <span className="font-medium font-['Inter] max-[1500px]:text-[16px] text-[18px] max-[767px]:text-[14px] leading-[120%] tracking-[0]  text-[#cdff09]">
                 Category
               </span>
             </Badge>
 
-            <h2 className="font-['Inter'] text-[48px] leading-[120%] font-semibold text-white text-center max-[1100px]:text-[36px] max-[1100px]:leading-[100%] max-[767px]:text-[28px] max-[767px]:leading-[120%]">
+            <h2 className="font-['Inter'] max-[1500px]:text-[48px] text-[56px] leading-[120%] font-semibold text-white text-center max-[1100px]:text-[36px] max-[1100px]:leading-[100%] max-[767px]:text-[28px] max-[767px]:leading-[120%]">
               Discover Our Full Suite of Aidy
             </h2>
           </div>

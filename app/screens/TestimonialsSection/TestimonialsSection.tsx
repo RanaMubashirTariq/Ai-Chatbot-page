@@ -69,20 +69,20 @@ export default function TestimonialsSection() {
   };
 
   return (
-    <section className="flex flex-col items-center gap-14 max-[767px]:gap-8 py-16 px-[135px] w-full max-[1300px]:px-[100px] max-[1100px]:px-[50px] max-[767px]:px-[25px] max-[680px]:py-[32px]">
+    <section className="flex flex-col items-center gap-14 max-[767px]:gap-8 py-16 max-[1500px]:px-[135px] px-[200px] w-full max-[1300px]:px-[100px] max-[1100px]:px-[50px] max-[767px]:px-[25px] max-[680px]:py-[32px]">
       {/* Header */}
       <div className="flex flex-col items-center gap-6">
         <div className="flex flex-col items-center gap-4">
-          <Badge className="px-6 py-[9px] rounded-[20px] border border-solid border-[#cdff08] shadow-[0px_0px_0px_1px_#ffffff1a] bg-transparent text-[#cdff09] font-medium-button text-base max-[767px]:text-[14px]">
+          <Badge className="px-6 py-[9px] max-[500px]:py-[6px] max-[500px]:px-[20px] rounded-[20px] border border-solid border-[#cdff08] shadow-[0px_0px_0px_1px_#ffffff1a] bg-transparent text-[#cdff09] font-medium-button max-[1500px]:text-base text-[18px] max-[767px]:text-[14px]">
             Customer Reviews
           </Badge>
-          <h2 className="font-heading-h2 text-[#ffffff] text-[48px] text-center leading-[120%] max-[1100px]:text-[36px] max-[767px]:text-[28px]">
+          <h2 className="font-heading-h2 text-[#ffffff] max-[1500px]:text-[48px] text-[56px] text-center leading-[120%] max-[1100px]:text-[36px] max-[767px]:text-[28px]">
             What Our Clients Say
           </h2>
         </div>
       </div>
 
-      <div className="flex flex-col items-center gap-11 w-full max-w-[1171px]">
+      <div className="flex flex-col items-center gap-11 w-full max-[1500px]:max-w-[1171px] w-[1371px]">
         {/* Cards Container */}
         <div
           ref={scrollRef}

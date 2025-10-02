@@ -120,7 +120,7 @@ const [openDropdown, setOpenDropdown] = useState<string | null>(null);
         {/* Decorative blurred elements */}
 
         {/* Navigation bar */}
-        <header className={`fixed top-0 left-0 w-full z-50 flex items-center justify-between px-[135px] py-[25px] max-[1300px]:px-[100px] max-[1100px]:px-[50px] max-[767px]:px-[25px] transition-all duration-300 ${
+        <header className={`fixed top-0 left-0 w-full z-50 flex items-center justify-between px-[200px] max-[1500px]:px-[135px] py-[25px] max-[1300px]:px-[100px] max-[1100px]:px-[50px] max-[767px]:px-[25px] transition-all duration-300 ${
                scrolled ? "backdrop-blur-sm bg-black/30" : ""
                  }`}
 >
@@ -227,29 +227,29 @@ const [openDropdown, setOpenDropdown] = useState<string | null>(null);
         </header>
 
         {/* Hero content */}
-        <div className="flex flex-col items-center gap-14 max-[860px]:gap-9 absolute top-[185px] max-[1100px]:top-[150px] max-[860px]:top-[120px] max-[767px]:top-[90px] left-1/2 transform -translate-x-1/2 w-[873px] max-[1100px]:w-[700px] max-[1000px]:w-[600px] max-[570px]:w-[100%] max-[767px]:gap-5 max-[767px]:px-[25px]">
+        <div className="flex flex-col items-center gap-14 max-[860px]:gap-9 absolute top-[185px] max-[1100px]:top-[150px] max-[860px]:top-[120px] max-[767px]:top-[90px] left-1/2 transform -translate-x-1/2  max-[1500px]:w-[873px] w-[953px] max-[1100px]:w-[700px] max-[1000px]:w-[600px] max-[570px]:w-[100%] max-[767px]:gap-5 max-[767px]:px-[25px]">
           <div className="flex flex-col items-center gap-8 w-full max-[860px]:gap-5">
-            <h1 className=" text-white text-center text-[74px] leading-[110.001%] font-bold max-[1100px]:text-[54px] max-[1100px]:leading-[100%] max-[1000px]:text-[44px] max-[767px]:text-[36px] max-[500px]:text-[28px] ">
+            <h1 className=" text-white text-center text-[84px] max-[1500px]:text-[64px] text-[74px] leading-[110.001%] font-bold max-[1100px]:text-[54px] max-[1100px]:leading-[100%] max-[1000px]:text-[44px] max-[767px]:text-[36px] max-[500px]:text-[28px] ">
               The Future of <br className="max-[360px]:hidden" />
               The Next-Gen Chatbot
             </h1>
 
-            <p className="font-['Inter'] text-white text-center text-[16px] font-normal leading-[160%] max-[850px]:leading-[130%] tracking-[0] max-[1000px]:text-[14px]  ">
+            <p className="font-['Inter'] text-white text-center  text-[18px] max-[1500px]:text-[16px] font-normal leading-[160%] max-[850px]:leading-[130%] tracking-[0] max-[1000px]:text-[14px]  ">
               Meet Aidy, the next-gen AI chatbot designed to enhance
               conversations with intuitive responses, seamless integration, and
               powerful automation.
             </p>
           </div>
 
-          <div className="flex items-center gap-4 max-[365px]:w-[100%] max-[365px]:flex-col max-[365px]:gap-2">
-            <Button className="z-11 cursor-pointer transform transition-transform duration-300 hover:scale-90  w-[174px] h-[52px] max-[365px]:w-[100%]  max-[365px]:h-10 px-6 py-[15px] bg-[#ccff09] hover:bg-[#ccff09]/90 text-[18px] max-[1100px]:text-[16px] max-[767px]:text-[14px] max-[500px]:leading-[100%]  font-medium font-['Inter']  leading-[120%] tracking-[0] rounded-[58px] text-[#09090f] font-big-buttton-2 max-[680px]:w-full">
+          <div className="flex items-center gap-4 max-[365px]:w-[100%] max-[365px]:flex-col max-[365px]:gap-2 relative z-11">
+            <Button className="z-11 cursor-pointer transform transition-transform duration-300 hover:scale-90  w-[174px] h-[52px] max-[500px]:w-[140px] max-[365px]:w-[100%]  max-[500px]:h-10 px-6 py-[15px] bg-[#ccff09] hover:bg-[#ccff09]/90 text-[18px] max-[1100px]:text-[16px] max-[767px]:text-[14px] max-[500px]:leading-[100%]  font-medium font-['Inter']  leading-[120%] tracking-[0] rounded-[58px] text-[#09090f] font-big-buttton-2 max-[680px]:w-full">
               Get Started
               <img src='/arrow.svg' className="ml-2 w-4 h-4" />
             </Button>
 
             <Button
              
-              className="z-11 cursor-pointer transform transition-transform duration-300 hover:scale-90  w-[189px] h-[52px] max-[365px]:w-[100%] max-[365px]:h-10 text-[18px] max-[1100px]:text-[16px] leading-[120%] max-[767px]:text-[14px] max-[500px]:leading-[100%] tracking-[0] font-['Inter] font-medium px-6 py-[15px] rounded-[58px] border-[1.5px] border-[#eaeaea] hover:bg-[#eaeaea]/20 text-[#ebebeb] font-big-buttton-2 max-[680px]:w-full"
+              className="z-11 cursor-pointer transform transition-transform duration-300 hover:scale-90  w-[189px] h-[52px] max-[500px]:w-[140px] max-[365px]:w-[100%] max-[500px]:h-10 text-[18px] max-[1100px]:text-[16px] leading-[120%] max-[767px]:text-[14px] max-[500px]:leading-[100%] tracking-[0] font-['Inter] font-medium px-6 py-[15px] rounded-[58px] border-[1.5px] border-[#eaeaea] hover:bg-[#eaeaea]/20 text-[#ebebeb] font-big-buttton-2 max-[680px]:w-full"
             >
               Request a Demo
             </Button>
@@ -258,8 +258,8 @@ const [openDropdown, setOpenDropdown] = useState<string | null>(null);
       </div>
                </div>
 
-               <div className="absolute z-0 top-[630px] max-[1100px]:top-[380px] max-[860px]:top-[270px] max-[840px]:top-[220px] max-[767px]:top-[150px] max-[560px]:top-[80px] max-[500px]:top-[30px] max-[380px]:top-[10px] max-[365px]:top-5 max-[340px]:top-[10px]   left-1/2 -translate-x-1/2 w-full max-w-[1170px] h-[825px]  max-[1100px]:px-[100px] max-[1000px]:px-[50px] max-[767px]:px-[25px]">
-                    <img src="/dash-1.svg" className="w-full h-full object-contain cursor-zoom-in" alt="" />
+               <div className="absolute z-0 top-[590px] max-[1500px]:top-[630px] max-[1100px]:top-[380px] max-[860px]:top-[270px] max-[840px]:top-[220px] max-[767px]:top-[150px] max-[560px]:top-[80px] max-[500px]:top-[30px] max-[380px]:top-[10px] max-[365px]:top-5 max-[340px]:top-[10px]   left-1/2 -translate-x-1/2 w-full max-w-[1300px]  max-[1500px]:max-w-[1170px] max-[1500px]:h-[850px] h-[1000px]  max-[1100px]:px-[100px] max-[1000px]:px-[50px] max-[767px]:px-[25px]">
+                    <img src="/dash-1.svg" className="w-full h-full object-center cursor-zoom-in" alt="" />
                </div>
       </section>
   );
