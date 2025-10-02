@@ -178,7 +178,7 @@ const [openDropdown, setOpenDropdown] = useState<string | null>(null);
             onClick={() => setMenuOpen((prev) => !prev)}
             aria-label={menuOpen ? "Close menu" : "Open menu"}
           >
-            {menuOpen ? <XIcon className="w-8 h-8" /> : <MenuIcon className="w-8 h-8" />}
+             <MenuIcon className="w-8 h-8" />
           </button>
 
           {/* Mobile Dropdown Menu (slide-in from right) */}
@@ -189,7 +189,7 @@ const [openDropdown, setOpenDropdown] = useState<string | null>(null);
           />
           {/* Panel */}
           <div
-            className={`fixed top-[70px] right-0 w-[250px] h-[90vh] rounded-[15px] bg-black/80 backdrop-blur-sm flex flex-col items-start pl-[30px] py-[50px] gap-8 min-[851px]:hidden z-20 transform transition-transform duration-300 ease-out ${menuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+            className={`fixed top-[70px] right-0 w-[250px] h-[90vh] rounded-[15px] bg-black backdrop-blur-sm flex flex-col items-start pl-[30px] py-[50px] gap-8 min-[851px]:hidden z-20 transform transition-transform duration-300 ease-out ${menuOpen ? 'translate-x-0' : 'translate-x-full'}`}
           >
             <nav className="flex flex-col items-start gap-5">
             {navItems.map((item, index) => (
