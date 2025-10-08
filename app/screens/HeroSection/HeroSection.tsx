@@ -70,14 +70,14 @@ const [openDropdown, setOpenDropdown] = useState<string | null>(null);
     };
   
     return (
-      <div className="relative w-full max-w-[81px] z-20">
+      <div className="relative w-full max-w-[81px] z-20 ">
         <div
           onClick={() => setOpen(!open)}
-          className="z-10 bg-transparent font-['Inter'] font-medium text-white text-[18px] leading-[120%] border-none rounded-[10px] py-1 cursor-pointer flex justify-between items-center gap-[10px]"
+          className="z-10 bg-transparent font-['Inter'] font-medium text-white hover:text-[#cdff08] transition-color duration-300 text-[18px] leading-[120%] border-none rounded-[10px] py-1 cursor-pointer flex justify-between items-center gap-[10px]"
         >
           <span>{selected}</span>
           <svg
-            className="w-6 h-6 text-white"
+            className="w-6 h-6 text-white hover:text-[#cdff08] transition-color duration-300"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -91,7 +91,7 @@ const [openDropdown, setOpenDropdown] = useState<string | null>(null);
               <li
                 key={option.label}
                 onClick={() => handleSelect(option)}
-                className="px-4 py-2 text-white cursor-pointer hover:bg-white/10 font-['Inter'] font-medium text-[16px] leading-[120%]"
+                className="px-4 py-2 text-white cursor-pointer hover:text-[#cdff08] transition-color duration-300  font-['Inter'] font-medium text-[16px] leading-[120%] "
               >
                 {option.label}
               </li>
@@ -152,7 +152,7 @@ const [openDropdown, setOpenDropdown] = useState<string | null>(null);
         <Link
           href={item.id ? `#${item.id}` : "#"}
           scroll={true}
-          className="flex items-center gap-2.5 font-['Inter'] text-[18px] max-[1100px]:text-[16px] font-medium text-white cursor-pointer"
+          className="flex items-center gap-2.5 font-['Inter'] text-[18px] max-[1100px]:text-[16px] font-medium text-white hover:text-[#cdff08] transition-color duration-300 cursor-pointer"
         >
           {item.name}
         </Link>
@@ -211,7 +211,7 @@ const [openDropdown, setOpenDropdown] = useState<string | null>(null);
           href={item.id ? `#${item.id}` : "#"}
           scroll={true}
           onClick={() => setMenuOpen(false)}
-          className="flex items-center gap-2.5 font-['Inter'] text-[18px] max-[1100px]:text-[16px] font-medium text-white cursor-pointer"
+          className="flex items-center gap-2.5 font-['Inter'] text-[18px] max-[1100px]:text-[16px] font-medium text-white hover:text-[#cdff08] transition-color duration-300 cursor-pointer"
         >
           {item.name}
         </Link>

@@ -121,7 +121,7 @@ export default function FaqSection  () {
                     </h4>
                   </div>
                   {/* Icon on the right */}
-                  <span className="ml-4 flex items-center absolute right-[30px] max-[500px]:right-[10px]">
+                  <span className="cursor-pointer ml-4 flex items-center absolute right-[30px] max-[500px]:right-[10px]">
                     {isOpen ? (
                              <img src="/minus.svg" alt="" className="max-[480px]:w-[20px] max-[480px]:h-[20px]" />
                     ) : (

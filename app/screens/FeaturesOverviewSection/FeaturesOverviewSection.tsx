@@ -25,7 +25,7 @@ export default function FeaturesOverviewSection  () {
                 Feature
               </Badge>
 
-              <h2 className="font-['Inter'] font-semibold max-[1500px]:text-[48px] text-[56px] leading-[120%]  text-[#ffffff] max-w-[650px]  max-[1500px]:max-w-[500px] max-[1000px]:max-w-[100%] max-[1100px]:text-[36px] max-[767px]:text-[28px] max-[767px]:leading-[100%]">
+              <h2 className="font-['Inter'] font-semibold max-[1510px]:text-[48px] text-[56px] leading-[120%]  text-[#ffffff] max-w-[650px]  max-[1500px]:max-w-[500px] max-[1000px]:max-w-[100%] max-[1100px]:text-[36px] max-[767px]:text-[28px] max-[767px]:leading-[100%]">
                 Clean and Efficient <br className="hidden max-[500px]:block"/> Code Generation
               </h2>
             </div>
@@ -52,10 +52,10 @@ export default function FeaturesOverviewSection  () {
         </div>
       </div>
 
-      <Card className="relative w-full max-[1500px]:max-w-[595px] max-[1500px]:h-[425px] w-[695px] h-[525px] bg-[#ffffff0f] cursor-zoom-in rounded-[28px] overflow-hidden shadow-[0px_4px_4px_#00000040] border-none max-[1300px]:h-[430px] max-[1300px]:max-w-[500px] max-[1100px]:max-w-[400px] max-[1100px]:h-[370px] max-[1000px]:max-w-[100%] max-[1000px]:h-[auto] max-[500px]:max-w-[100%] max-[500px]:h-[300px]">
+      <Card className="relative w-full max-[1500px]:max-w-[595px] max-[1500px]:h-[425px] w-[695px] h-[525px] bg-[#ffffff0f] cursor-zoom-in rounded-[28px] overflow-hidden shadow-[0px_4px_4px_#00000040] border-none max-[1360px]:h-[430px] max-[1360px]:max-w-[500px] max-[1200px]:max-w-[400px] max-[1200px]:h-[370px] max-[1000px]:max-w-[100%] max-[1000px]:h-[370px] max-[500px]:max-w-[100%] max-[500px]:h-[300px]">
         <div className="relative h-[425px]">
           <img
-            className="absolute max-[1500px]:max-w-[560px] max-[1500px]:h-[425px] w-[660px] h-[525px] max-[1500px]:top-[35px] top-[0px] left-[35px]  max-[1300px]:h-[430px]  max-[1300px]:w-[500px] max-[1100px]:max-w-[400px] max-[1100px]:h-[340px] max-[1000px]:w-[100%] max-[1000px]:h-full max-[500px]:w-[100%] max-[500px]:h-[300px]"
+            className="absolute max-[1500px]:max-w-[560px] max-[1500px]:h-[425px] w-[660px] h-[525px] max-[1500px]:top-[35px] top-[0px] left-[35px]  max-[1360px]:h-[430px]  max-[1360px]:w-[500px] max-[1200px]:max-w-[400px] max-[1200px]:h-[340px] max-[1000px]:max-w-[100%] max-[1000px]:h-full max-[500px]:w-[100%] max-[500px]:h-[300px]"
             alt="Code example"
             src="/imge.png"
           />
